@@ -23,7 +23,7 @@ If a user has to make changes, then do the changes and create an image and store
 
 
 Dockerfile
-Command                                              Description
+Instruction                                            Description
 FROM <image>                                 The image which needs to be used as base image, very first command in the Dockerfile
 ADD  <hostfiles> <containerfiles>            Adds files from your host into your image
 RUN <command>                                Runs any given command useful to install any software, create directories etc.
