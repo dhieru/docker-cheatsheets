@@ -1,0 +1,39 @@
+<b>Command</b>                                               Description
+docker pull image                            pulls an image from dockerhub
+docker images                                shows all the images the machine
+docker ps                                    shows all the running container
+docker ps -a                                 shows all the containers including stopped containers
+docker run image                             creates a container from an image
+docker stop <container id/container image>   stops a running container
+docker system prune -f                       To remove all the stopped continers (docker does not touch the running contianer)
+docker system prune -a                       To remove all the stopped containers + unused images
+docker run -d                                To run the container in the background
+docker run -i                                To attach standard input to container
+docker run -t                                To attach standard output to container
+docker run --name                            To assign give name to container
+docker run --entrypoint                      Entry point is the command to be executed once a container is created.
+                                             An image might have an entrypoint already, this option overrides the container's entrypoint
+docker run -v                                To map a volume on the host to container
+docker run --network                         Assigns the docker created network to docker containers
+docker run -p                                To map a port of the host to container
+
+Docker run command creates a brand new container each time you run the command.
+If a user has to make changes, then do the changes and create an image and store that image and then run that image.
+
+
+
+Dockerfile
+Command                                              Description
+FROM <image>                                 The image which needs to be used as base image, very first command in the Dockerfile
+ADD  <hostfiles> <containerfiles>            Adds files from your host into your image
+RUN <command>                                Runs any given command useful to install any software, create directories etc.
+ENV <envVar> <envVarValue>                   Sets an environment variable in the image
+WORKDIR <dir>                                Sets a default working directory. [if we ignore, then / (root) is the working directory]
+EXPOSE <port #>                              Exposes a port for your application
+ENTRYPOINT <command to be executed>          Commands to be executed once a container is created from this image
+#                                            To comment a line
+LABEL                                        Assing a label to image for example MAINTAINER=dhiren
+
+
+
+Checking Container Logs
