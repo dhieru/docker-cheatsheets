@@ -34,6 +34,11 @@ ENTRYPOINT <command to be executed>          Commands to be executed once a cont
 #                                            To comment a line
 LABEL                                        Assing a label to image for example MAINTAINER=dhiren
 
-
+Pushing the docker images to hub.docker.com
+1. Login to docker
+docker login
+Give your username and password
+docker push <owner_name>/<image_name>
 
 Checking Container Logs
+docker logs <container_id/name>
