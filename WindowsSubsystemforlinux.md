@@ -1,5 +1,5 @@
 # Installing Docker on Windows Home
-WSL 2
+WSL 2\n
 https://docs.microsoft.com/en-us/windows/wsl/install-win10
 https://docs.docker.com/docker-for-windows/install-windows-home/
 https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel
