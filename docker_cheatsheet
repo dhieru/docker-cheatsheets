@@ -1,3 +1,4 @@
+Container : An isolated area of an OS with resource usage limits applied.
 <b>Command</b>                                               Description
 docker pull image                            pulls an image from dockerhub
 docker images                                shows all the images the machine
