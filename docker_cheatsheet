@@ -42,3 +42,16 @@ docker push <owner_name>/<image_name>
 
 Checking Container Logs
 docker logs <container_id/name>
+
+#Docker container exit codes
+#List all containers exited
+docker ps --filter 'status=exited'
+#Inspect By container ID
+docker inspect <container-id> --format='{{.State.ExitCode}}'
+
+Exit Code                                           Description
+0                                           Absence of an attached foreground process
+1                                           Failure due to an error application
+137                                         Failure as a result of receving SIGKILL (Manual intervaention or oom-killer) Out-of-memory
+139                                         Failure as a result of receving SIGSEGV
+143                                         Failure as a result of receving SIGTERM
